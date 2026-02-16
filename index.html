@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Étoile | High-End Dining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">L'Étoile</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+        <button class="btn btn-outline magnetic ripple" onclick="openModal()">Book a Table</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-chef-preparing-a-dish-in-a-fine-dining-restaurant-43063-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content parallax" data-speed="0.5">
+            <h1 class="reveal fade-up">Taste the Elegance</h1>
+            <p class="reveal fade-up delay-1">A symphony of flavors in every bite.</p>
+            <button class="btn btn-primary magnetic ripple reveal fade-up delay-2" onclick="openModal()">Reserve Now</button>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container text-center">
+            <h2 class="reveal fade-up animated-gradient">Our Legacy</h2>
+            <p class="reveal fade-up">Experience culinary mastery crafted over decades.</p>
+            <div class="counters">
+                <div class="counter-item reveal fade-up">
+                    <h3 class="counter" data-target="15">0</h3>
+                    <span>Years of Excellence</span>
+                </div>
+                <div class="counter-item reveal fade-up delay-1">
+                    <h3 class="counter" data-target="3">0</h3>
+                    <span>Michelin Stars</span>
+                </div>
+                <div class="counter-item reveal fade-up delay-2">
+                    <h3 class="counter" data-target="50">0</h3>
+                    <span>Signature Dishes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section parallax-bg">
+        <div class="container">
+            <h2 class="reveal fade-up text-center">Exquisite Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-card glass reveal fade-up">
+                    <div class="card-img-wrapper">
+                        <img data-src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800" alt="Steak" class="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Wagyu Tenderloin</h3>
+                        <p class="desc">Truffle mashed potatoes, asparagus, red wine reduction.</p>
+                        <div class="card-footer">
+                            <span class="price">$120</span>
+                            <button class="expand-btn">Details</button>
+                        </div>
+                        <div class="expanded-content">
+                            <p>Sourced directly from Kagoshima, Japan. Aged for 28 days for maximum tenderness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card glass reveal fade-up delay-1">
+                    <div class="card-img-wrapper">
+                        <img data-src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&q=80&w=800" alt="Salmon" class="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pan-Seared Scallops</h3>
+                        <p class="desc">Cauliflower purée, crispy pancetta, lemon butter.</p>
+                        <div class="card-footer">
+                            <span class="price">$45</span>
+                            <button class="expand-btn">Details</button>
+                        </div>
+                        <div class="expanded-content">
+                            <p>Wild-caught Atlantic scallops, seared to perfection with local organic butter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="reveal fade-up text-center">The Atmosphere</h2>
+            <div class="masonry">
+                <img data-src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=800" class="lazy lightbox-trigger reveal fade-up" alt="Bar">
+                <img data-src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=800" class="lazy lightbox-trigger reveal fade-up" alt="Dining">
+                <img data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800" class="lazy lightbox-trigger reveal fade-up" alt="Chef">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container text-center reveal fade-up">
+            <div class="slider-container">
+                <div class="slide active">
+                    <p class="quote">"The absolute pinnacle of modern dining. A sensory masterpiece."</p>
+                    <span class="author">- The New York Times</span>
+                </div>
+                <div class="slide">
+                    <p class="quote">"An unforgettable experience. The Wagyu was sublime."</p>
+                    <span class="author">- Vogue Magazine</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="floating-btn magnetic ripple" onclick="openModal()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+    </button>
+
+    <div class="modal" id="resModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content glass">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h2>Reserve a Table</h2>
+            <form id="resForm">
+                <input type="text" placeholder="Name" required>
+                <input type="date" required>
+                <input type="time" required>
+                <select required>
+                    <option value="" disabled selected>Guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5+">5+ People</option>
+                </select>
+                <button type="submit" class="btn btn-primary ripple w-100">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img" src="" alt="Enlarged Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-darker: #050505;
+    --text-light: #f5f5f5;
+    --text-muted: #a0a0a0;
+    --gold: #d4af37;
+    --gold-hover: #b5952f;
+    --glass-bg: rgba(25, 25, 25, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a, button { cursor: pointer; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 100px 0; }
+.text-center { text-align: center; }
+.w-100 { width: 100%; }
+
+/* Page Loader */
+.page-loader {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background: var(--bg-dark); z-index: 9999;
+    display: flex; justify-content: center; align-items: center;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+.page-loader.hidden { opacity: 0; visibility: hidden; }
+.spinner {
+    width: 40px; height: 40px; border: 3px solid var(--glass-border);
+    border-top-color: var(--gold); border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Scroll Progress */
+.scroll-progress {
+    position: fixed; top: 0; left: 0; height: 3px; background: var(--gold);
+    width: 0%; z-index: 1000; transition: width 0.1s;
+}
+
+/* Sticky Blurred Navbar */
+.navbar {
+    position: fixed; top: 0; width: 100%; padding: 20px 5%;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 100; transition: var(--transition);
+}
+.navbar.scrolled {
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px); padding: 15px 5%;
+    border-bottom: 1px solid var(--glass-border);
+}
+.logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; color: var(--gold); }
+.nav-links { list-style: none; display: flex; gap: 30px; }
+.nav-links a {
+    text-decoration: none; color: var(--text-light); font-weight: 500;
+    position: relative; transition: color 0.3s;
+}
+.nav-links a::after {
+    content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px;
+    background: var(--gold); transition: width 0.3s ease;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+
+/* Buttons & Microinteractions */
+.btn {
+    padding: 12px 24px; border: none; border-radius: 30px; font-weight: 600;
+    letter-spacing: 1px; text-transform: uppercase; transition: var(--transition);
+    position: relative; overflow: hidden;
+}
+.btn-primary { background: var(--gold); color: var(--bg-dark); }
+.btn-primary:hover { background: var(--gold-hover); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2); }
+.btn-outline { background: transparent; border: 1px solid var(--gold); color: var(--gold); }
+.btn-outline:hover { background: var(--gold); color: var(--bg-dark); }
+
+/* Ripple Effect */
+.ripple .ripple-span {
+    position: absolute; border-radius: 50%; background: rgba(255, 255, 255, 0.4);
+    transform: scale(0); animation: ripple-anim 0.6s linear; pointer-events: none;
+}
+@keyframes ripple-anim { to { transform: scale(4); opacity: 0; } }
+
+/* Hero Section */
+.hero {
+    height: 100vh; position: relative; display: flex;
+    justify-content: center; align-items: center; text-align: center;
+    overflow: hidden;
+}
+.hero-video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); z-index: -2; object-fit: cover; }
+.video-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: -1; }
+.hero h1 { font-size: 4rem; margin-bottom: 20px; font-weight: 300; }
+.hero p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px; }
+
+/* Scroll Reveal Classes */
+.reveal { opacity: 0; transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+.fade-up { transform: translateY(50px); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+
+/* Animated Gradient */
+.animated-gradient {
+    background: linear-gradient(90deg, var(--gold), #fff, var(--gold));
+    background-size: 200% auto; -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; animation: shine 3s linear infinite;
+}
+@keyframes shine { to { background-position: 200% center; } }
+
+/* Counters */
+.counters { display: flex; justify-content: space-around; margin-top: 50px; }
+.counter-item h3 { font-size: 3rem; color: var(--gold); }
+
+/* Menu & Glassmorphism */
+.menu-section { position: relative; background: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2000') center/cover fixed; }
+.menu-section::before { content: ''; position: absolute; inset: 0; background: var(--bg-darker); opacity: 0.9; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; position: relative; z-index: 1; }
+.glass {
+    background: var(--glass-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border); border-radius: 15px; overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Hover Zoom Food Images */
+.card-img-wrapper { overflow: hidden; height: 200px; }
+.card-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.menu-card:hover .card-img-wrapper img { transform: scale(1.1); }
+.card-content { padding: 20px; }
+.card-content h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.card-content .desc { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }
+.card-footer { display: flex; justify-content: space-between; align-items: center; }
+.price { font-size: 1.25rem; font-weight: bold; color: var(--gold); }
+.expand-btn { background: none; border: none; color: var(--text-light); border-bottom: 1px dashed var(--gold); transition: 0.3s; }
+.expand-btn:hover { color: var(--gold); }
+.expanded-content {
+    max-height: 0; overflow: hidden; transition: max-height 0.4s ease, margin-top 0.4s ease;
+    color: var(--text-muted); font-size: 0.85rem;
+}
+.menu-card.expanded .expanded-content { max-height: 100px; margin-top: 15px; }
+
+/* Masonry Gallery */
+.masonry { column-count: 3; column-gap: 15px; margin-top: 50px; }
+.masonry img { width: 100%; border-radius: 10px; margin-bottom: 15px; cursor: zoom-in; transition: 0.3s; }
+.masonry img:hover { opacity: 0.8; }
+
+/* Lightbox */
+.lightbox {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 2000;
+    display: flex; justify-content: center; align-items: center;
+    opacity: 0; pointer-events: none; transition: 0.3s ease;
+}
+.lightbox.active { opacity: 1; pointer-events: all; }
+.lightbox img { max-width: 90%; max-height: 90%; border-radius: 5px; transform: scale(0.8); transition: 0.3s ease; }
+.lightbox.active img { transform: scale(1); }
+.close-lightbox { position: absolute; top: 30px; right: 40px; font-size: 40px; color: #fff; cursor: pointer; }
+
+/* Testimonials Slider */
+.testimonials { background: var(--bg-darker); overflow: hidden; }
+.slider-container { position: relative; height: 150px; }
+.slide { position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transform: translateX(50px); transition: all 0.5s ease; }
+.slide.active { opacity: 1; transform: translateX(0); }
+.quote { font-size: 1.5rem; font-style: italic; margin-bottom: 15px; }
+.author { color: var(--gold); font-weight: bold; }
+
+/* Floating Button */
+.floating-btn {
+    position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px;
+    background: var(--gold); color: #000; border: none; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3); z-index: 99; transition: transform 0.3s;
+}
+.floating-btn:hover { transform: scale(1.1); }
+
+/* Reservation Modal */
+.modal {
+    position: fixed; inset: 0; z-index: 1000; display: flex;
+    justify-content: center; align-items: center;
+    opacity: 0; pointer-events: none; transition: 0.4s ease;
+}
+.modal.active { opacity: 1; pointer-events: all; }
+.modal-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); }
+.modal-content {
+    position: relative; width: 90%; max-width: 400px; padding: 40px;
+    transform: translateY(50px); transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.modal.active .modal-content { transform: translateY(0); }
+.close-btn { position: absolute; top: 15px; right: 20px; background: none; border: none; color: #fff; font-size: 24px; cursor: pointer; }
+form input, form select {
+    width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid var(--glass-border);
+    background: rgba(255,255,255,0.05); color: #fff; border-radius: 8px; outline: none;
+}
+form input:focus { border-color: var(--gold); }
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero h1 { font-size: 2.5rem; }
+    .counters { flex-direction: column; gap: 30px; }
+    .masonry { column-count: 1; }
+}
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // 1. Page Transition & Loader Removal
+    const loader = document.querySelector('.page-loader');
+    setTimeout(() => {
+        loader.classList.add('hidden');
+        window.scrollTo(0,0);
+    }, 800);
+
+    // 2. Scroll Progress Indicator & Sticky Navbar
+    const progressBar = document.querySelector('.scroll-progress');
+    const navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', () => {
+        // Scroll Progress Math
+        let scrollTop = window.scrollY;
+        let docHeight = document.body.offsetHeight - window.innerHeight;
+        let scrollPercent = (scrollTop / docHeight) * 100;
+        progressBar.style.width = scrollPercent + "%";
+
+        // Sticky Navbar Blur
+        if (scrollTop > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }, { passive: true });
+
+    // 3. Scroll Reveal Animations (Intersection Observer)
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Optimize: Only animate once
+            }
+        });
+    }, { rootMargin: "0px 0px -50px 0px", threshold: 0.1 });
+    
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 4. Parallax Effect (Light & Smooth via requestAnimationFrame)
+    const parallaxElements = document.querySelectorAll('.parallax');
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                let scrolled = window.scrollY;
+                parallaxElements.forEach(el => {
+                    let speed = el.getAttribute('data-speed') || 0.5;
+                    el.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // 5. Animated Counters
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = +entry.target.getAttribute('data-target');
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+                
+                let current = 0;
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        entry.target.innerText = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        entry.target.innerText = target;
+                    }
+                };
+                updateCounter();
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // 6. Magnetic Button Effect
+    const magneticBtns = document.querySelectorAll('.magnetic');
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            // Move button slightly towards cursor
+            btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = `translate(0px, 0px)`;
+        });
+    });
+
+    // 7. Ripple Click Effect
+    const rippleBtns = document.querySelectorAll('.ripple');
+    rippleBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            let x = e.clientX - e.target.getBoundingClientRect().left;
+            let y = e.clientY - e.target.getBoundingClientRect().top;
+            
+            let ripples = document.createElement('span');
+            ripples.className = 'ripple-span';
+            ripples.style.left = x + 'px';
+            ripples.style.top = y + 'px';
+            this.appendChild(ripples);
+            
+            setTimeout(() => { ripples.remove() }, 600);
+        });
+    });
+
+    // 8. Expandable Menu Cards
+    const expandBtns = document.querySelectorAll('.expand-btn');
+    expandBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.menu-card');
+            card.classList.toggle('expanded');
+            e.target.innerText = card.classList.contains('expanded') ? 'Hide' : 'Details';
+        });
+    });
+
+    // 9. Lazy Loading Images
+    const lazyImages = document.querySelectorAll('img.lazy');
+    const lazyObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.getAttribute('data-src');
+                img.onload = () => img.classList.remove('lazy');
+                observer.unobserve(img);
+            }
+        });
+    });
+    lazyImages.forEach(img => lazyObserver.observe(img));
+
+    // 10. Animated Testimonials Slider
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 5000);
+
+    // 11. Lightbox Logic
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    triggers.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src; // Uses the already loaded high-res source
+            lightbox.classList.add('active');
+        });
+    });
+
+    // Global Functions for Modal & Lightbox
+    window.openModal = () => document.getElementById('resModal').classList.add('active');
+    window.closeModal = () => document.getElementById('resModal').classList.remove('active');
+    window.closeLightbox = () => lightbox.classList.remove('active');
+    
+    // Close modals on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") {
+            closeModal();
+            closeLightbox();
+        }
+  document.addEventListener("DOMContentLoaded", () => {
+    
+    // 1. Page Transition & Loader Removal
+    const loader = document.querySelector('.page-loader');
+    setTimeout(() => {
+        loader.classList.add('hidden');
+        window.scrollTo(0,0);
+    }, 800);
+
+    // 2. Scroll Progress Indicator & Sticky Navbar
+    const progressBar = document.querySelector('.scroll-progress');
+    const navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', () => {
+        // Scroll Progress Math
+        let scrollTop = window.scrollY;
+        let docHeight = document.body.offsetHeight - window.innerHeight;
+        let scrollPercent = (scrollTop / docHeight) * 100;
+        progressBar.style.width = scrollPercent + "%";
+
+        // Sticky Navbar Blur
+        if (scrollTop > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }, { passive: true });
+
+    // 3. Scroll Reveal Animations (Intersection Observer)
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Optimize: Only animate once
+            }
+        });
+    }, { rootMargin: "0px 0px -50px 0px", threshold: 0.1 });
+    
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 4. Parallax Effect (Light & Smooth via requestAnimationFrame)
+    const parallaxElements = document.querySelectorAll('.parallax');
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                let scrolled = window.scrollY;
+                parallaxElements.forEach(el => {
+                    let speed = el.getAttribute('data-speed') || 0.5;
+                    el.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // 5. Animated Counters
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = +entry.target.getAttribute('data-target');
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+                
+                let current = 0;
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        entry.target.innerText = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        entry.target.innerText = target;
+                    }
+                };
+                updateCounter();
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // 6. Magnetic Button Effect
+    const magneticBtns = document.querySelectorAll('.magnetic');
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            // Move button slightly towards cursor
+            btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = `translate(0px, 0px)`;
+        });
+    });
+
+    // 7. Ripple Click Effect
+    const rippleBtns = document.querySelectorAll('.ripple');
+    rippleBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            let x = e.clientX - e.target.getBoundingClientRect().left;
+            let y = e.clientY - e.target.getBoundingClientRect().top;
+            
+            let ripples = document.createElement('span');
+            ripples.className = 'ripple-span';
+            ripples.style.left = x + 'px';
+            ripples.style.top = y + 'px';
+            this.appendChild(ripples);
+            
+            setTimeout(() => { ripples.remove() }, 600);
+        });
+    });
+
+    // 8. Expandable Menu Cards
+    const expandBtns = document.querySelectorAll('.expand-btn');
+    expandBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.menu-card');
+            card.classList.toggle('expanded');
+            e.target.innerText = card.classList.contains('expanded') ? 'Hide' : 'Details';
+        });
+    });
+
+    // 9. Lazy Loading Images
+    const lazyImages = document.querySelectorAll('img.lazy');
+    const lazyObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.getAttribute('data-src');
+                img.onload = () => img.classList.remove('lazy');
+                observer.unobserve(img);
+            }
+        });
+    });
+    lazyImages.forEach(img => lazyObserver.observe(img));
+
+    // 10. Animated Testimonials Slider
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 5000);
+
+    // 11. Lightbox Logic
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    triggers.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src; // Uses the already loaded high-res source
+            lightbox.classList.add('active');
+        });
+    });
+
+    // Global Functions for Modal & Lightbox
+    window.openModal = () => document.getElementById('resModal').classList.add('active');
+    window.closeModal = () => document.getElementById('resModal').classList.remove('active');
+    window.closeLightbox = () => lightbox.classList.remove('active');
+    
+    // Close modals on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") {
+            closeModal();
+            closeLightbox();
+        }
+    });
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // 1. Page Transition & Loader Removal
+    const loader = document.querySelector('.page-loader');
+    setTimeout(() => {
+        loader.classList.add('hidden');
+        window.scrollTo(0,0);
+    }, 800);
+
+    // 2. Scroll Progress Indicator & Sticky Navbar
+    const progressBar = document.querySelector('.scroll-progress');
+    const navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', () => {
+        // Scroll Progress Math
+        let scrollTop = window.scrollY;
+        let docHeight = document.body.offsetHeight - window.innerHeight;
+        let scrollPercent = (scrollTop / docHeight) * 100;
+        progressBar.style.width = scrollPercent + "%";
+
+        // Sticky Navbar Blur
+        if (scrollTop > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }, { passive: true });
+
+    // 3. Scroll Reveal Animations (Intersection Observer)
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Optimize: Only animate once
+            }
+        });
+    }, { rootMargin: "0px 0px -50px 0px", threshold: 0.1 });
+    
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 4. Parallax Effect (Light & Smooth via requestAnimationFrame)
+    const parallaxElements = document.querySelectorAll('.parallax');
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                let scrolled = window.scrollY;
+                parallaxElements.forEach(el => {
+                    let speed = el.getAttribute('data-speed') || 0.5;
+                    el.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // 5. Animated Counters
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = +entry.target.getAttribute('data-target');
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+                
+                let current = 0;
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        entry.target.innerText = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        entry.target.innerText = target;
+                    }
+                };
+                updateCounter();
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // 6. Magnetic Button Effect
+    const magneticBtns = document.querySelectorAll('.magnetic');
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            // Move button slightly towards cursor
+            btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = `translate(0px, 0px)`;
+        });
+    });
+
+    // 7. Ripple Click Effect
+    const rippleBtns = document.querySelectorAll('.ripple');
+    rippleBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            let x = e.clientX - e.target.getBoundingClientRect().left;
+            let y = e.clientY - e.target.getBoundingClientRect().top;
+            
+            let ripples = document.createElement('span');
+            ripples.className = 'ripple-span';
+            ripples.style.left = x + 'px';
+            ripples.style.top = y + 'px';
+            this.appendChild(ripples);
+            
+            setTimeout(() => { ripples.remove() }, 600);
+        });
+    });
+
+    // 8. Expandable Menu Cards
+    const expandBtns = document.querySelectorAll('.expand-btn');
+    expandBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.menu-card');
+            card.classList.toggle('expanded');
+            e.target.innerText = card.classList.contains('expanded') ? 'Hide' : 'Details';
+        });
+    });
+
+    // 9. Lazy Loading Images
+    const lazyImages = document.querySelectorAll('img.lazy');
+    const lazyObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.getAttribute('data-src');
+                img.onload = () => img.classList.remove('lazy');
+                observer.unobserve(img);
+            }
+        });
+    });
+    lazyImages.forEach(img => lazyObserver.observe(img));
+
+    // 10. Animated Testimonials Slider
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 5000);
+
+    // 11. Lightbox Logic
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    triggers.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src; // Uses the already loaded high-res source
+            lightbox.classList.add('active');
+        });
+    });
+
+    // Global Functions for Modal & Lightbox
+    window.openModal = () => document.getElementById('resModal').classList.add('active');
+    window.closeModal = () => document.getElementById('resModal').classList.remove('active');
+    window.closeLightbox = () => lightbox.classList.remove('active');
+    
+    // Close modals on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") {
+            closeModal();
+            closeLightbox();
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // 1. Page Transition & Loader Removal
+    const loader = document.querySelector('.page-loader');
+    setTimeout(() => {
+        loader.classList.add('hidden');
+        window.scrollTo(0,0);
+    }, 800);
+
+    // 2. Scroll Progress Indicator & Sticky Navbar
+    const progressBar = document.querySelector('.scroll-progress');
+    const navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', () => {
+        // Scroll Progress Math
+        let scrollTop = window.scrollY;
+        let docHeight = document.body.offsetHeight - window.innerHeight;
+        let scrollPercent = (scrollTop / docHeight) * 100;
+        progressBar.style.width = scrollPercent + "%";
+
+        // Sticky Navbar Blur
+        if (scrollTop > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }, { passive: true });
+
+    // 3. Scroll Reveal Animations (Intersection Observer)
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Optimize: Only animate once
+            }
+        });
+    }, { rootMargin: "0px 0px -50px 0px", threshold: 0.1 });
+    
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 4. Parallax Effect (Light & Smooth via requestAnimationFrame)
+    const parallaxElements = document.querySelectorAll('.parallax');
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                let scrolled = window.scrollY;
+                parallaxElements.forEach(el => {
+                    let speed = el.getAttribute('data-speed') || 0.5;
+                    el.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // 5. Animated Counters
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = +entry.target.getAttribute('data-target');
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+                
+                let current = 0;
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        entry.target.innerText = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        entry.target.innerText = target;
+                    }
+                };
+                updateCounter();
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // 6. Magnetic Button Effect
+    const magneticBtns = document.querySelectorAll('.magnetic');
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            // Move button slightly towards cursor
+            btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = `translate(0px, 0px)`;
+        });
+    });
+
+    // 7. Ripple Click Effect
+    const rippleBtns = document.querySelectorAll('.ripple');
+    rippleBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            let x = e.clientX - e.target.getBoundingClientRect().left;
+            let y = e.clientY - e.target.getBoundingClientRect().top;
+            
+            let ripples = document.createElement('span');
+            ripples.className = 'ripple-span';
+            ripples.style.left = x + 'px';
+            ripples.style.top = y + 'px';
+            this.appendChild(ripples);
+            
+            setTimeout(() => { ripples.remove() }, 600);
+        });
+    });
+
+    // 8. Expandable Menu Cards
+    const expandBtns = document.querySelectorAll('.expand-btn');
+    expandBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.menu-card');
+            card.classList.toggle('expanded');
+            e.target.innerText = card.classList.contains('expanded') ? 'Hide' : 'Details';
+        });
+    });
+
+    // 9. Lazy Loading Images
+    const lazyImages = document.querySelectorAll('img.lazy');
+    const lazyObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.getAttribute('data-src');
+                img.onload = () => img.classList.remove('lazy');
+                observer.unobserve(img);
+            }
+        });
+    });
+    lazyImages.forEach(img => lazyObserver.observe(img));
+
+    // 10. Animated Testimonials Slider
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 5000);
+
+    // 11. Lightbox Logic
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    triggers.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src; // Uses the already loaded high-res source
+            lightbox.classList.add('active');
+        });
+    });
+
+    // Global Functions for Modal & Lightbox
+    window.openModal = () => document.getElementById('resModal').classList.add('active');
+    window.closeModal = () => document.getElementById('resModal').classList.remove('active');
+    window.closeLightbox = () => lightbox.classList.remove('active');
+    
+    // Close modals on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") {
+            closeModal();
+            closeLightbox();
+        }
+    });
+});
+                      
